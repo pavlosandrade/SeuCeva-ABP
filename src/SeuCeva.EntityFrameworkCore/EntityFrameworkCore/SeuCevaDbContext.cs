@@ -1,4 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SeuCeva.Categorias;
+using SeuCeva.Empresas;
+using SeuCeva.Produtos;
+using SeuCeva.ProdutosEmpresas;
 using System;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
@@ -53,6 +57,12 @@ public class SeuCevaDbContext :
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
     #endregion
+
+    public DbSet<Empresa> Empresas { get; set; }
+    public DbSet<ProdutosEmpresa> ProdutosEmpresas { get; set; }
+    public DbSet<Categoria> Categorias { get; set; }
+    public DbSet<Produto> Produtos { get; set; }
+
 
     public SeuCevaDbContext(DbContextOptions<SeuCevaDbContext> options)
         : base(options)
