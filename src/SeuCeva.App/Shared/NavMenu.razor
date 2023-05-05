@@ -1,8 +1,8 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@*<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">SeuCeva.App</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
+            <small class="navbar-toggler-icon"></small>
         </button>
     </div>
 </div>
@@ -11,21 +11,51 @@
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+                <small class="oi oi-home" aria-hidden="true"></small> Home
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+                <small class="oi oi-plus" aria-hidden="true"></small> Counter
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+                <small class="oi oi-list-rich" aria-hidden="true"></small> Fetch data
             </NavLink>
         </div>
     </nav>
+</div>*@
+
+<div class="container-fluid bg-castanho fixed-bottom rounded-top">
+    <div class="row align-items-center">
+        <div class="col-4 py-1 text-center">
+            <div>
+                <i class="bi bi-house text-dourado fs-4 fw-bold"></i>
+            </div>
+            <div class="nav-div">
+                <small class="text-dourado fw-bold">Home</small>
+            </div>
+        </div>
+        <div class="col-4 py-1 text-center">
+            <div>
+                <i class="bi bi-card-list text-dourado fs-4 fw-bold"></i>
+            </div>
+            <div class="nav-div">
+                <small class="text-dourado fw-bold">Produtos</small>
+            </div>
+        </div>
+        <div class="col-4 py-1 text-center">
+            <div>
+                <i class="bi bi-person text-dourado fs-4 fw-bold"></i>
+            </div>
+            <div class="nav-div">
+                <small class="text-dourado fw-bold">Meu Perfil</small>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 @code {
     private bool collapseNavMenu = true;
