@@ -1,21 +1,7 @@
 ﻿@page "/"
+@using SeuCeva.App.Shared.Components.Categorias
+@using SeuCeva.App.Shared.Components.CtaHome
 
-<div class="">
-    <div class="row gx-2">
-        @for(var i = 0; i < 6; i++)
-        {
-            <div class="col-4 mb-3">
-                <div class="bg-white shadow text-center p-3 rounded-3">
-                    <div class="fs-6">ICO</div>
-                    <div><strong class="fs-8">Categoria</strong></div>
-                </div>
-            </div>
-        }
-    </div>
-</div>
+<Categorias></Categorias>
 
-
-
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
+<CtaHome></CtaHome>

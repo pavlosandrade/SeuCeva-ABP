@@ -125,10 +125,17 @@ small{
 }
 
 .fs-8{
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 .rounded-top {
     border-top-left-radius: 0.75rem !important;
     border-top-right-radius: 0.75rem !important;
+}
+
+.img-categoria {
+    max-width: 45px;
+    max-height: 45px;
+    min-width: 45px;
+    min-height: 45px;
 }

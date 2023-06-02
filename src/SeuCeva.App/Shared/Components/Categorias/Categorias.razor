@@ -1,0 +1,19 @@
+﻿<div>
+    <div class="row gx-2">
+        @foreach (var item in categoria)
+        {
+            <div class="col-4 mb-3">
+                <div class="bg-white shadow text-center p-3 rounded-3">
+                    <div class="">
+                        <img class="img-categoria" src="@item.Ico" />
+                    </div>
+                    <div><strong class="fs-8">@item.Nome</strong></div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="col-12 text-end">
+        <span class="fs-6 text-castanho">Ver Mais</span>
+    </div>
+</div>

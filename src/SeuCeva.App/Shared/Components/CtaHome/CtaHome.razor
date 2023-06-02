@@ -1,0 +1,28 @@
+﻿@{
+    var index = cta.Count;
+}
+
+<div class="my-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            @for (var i = 0; i < index; i++)
+            {
+                var itemActive = i == 0 ? "active" : "";
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@i" class="@itemActive" aria-current="true" aria-label="Slide @i"></button>
+            }
+        </div>
+        <div class="carousel-inner">
+            @foreach(var item in cta)
+            {
+                var itemActive = cta.IndexOf(item) == 0 ? "active" : "";
+                <div class="carousel-item @itemActive">
+                    <img src="@item.Img" class="d-block w-100" alt="...">
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+
+}
