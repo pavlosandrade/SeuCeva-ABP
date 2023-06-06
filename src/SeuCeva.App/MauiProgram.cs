@@ -22,7 +22,7 @@ namespace SeuCeva.App
 		builder.Logging.AddDebug();
 #endif
 
-            builder.Services.AddSingleton<WeatherForecastService>();
+           
 
             return builder.Build();
         }

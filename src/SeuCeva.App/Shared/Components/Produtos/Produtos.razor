@@ -1,0 +1,38 @@
+﻿<div class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="fw-bold text-castanho fs-6">Mais Procurados</h2>
+            </div>
+
+            @foreach (var item in produtos)
+            {
+                <div class="col-12 my-4">
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <img class="img-produto rounded-3" src="@item.Img" />
+                        </div>
+
+                        <div class="col-8">
+                            <div>
+                                <span class="fw-bold fs-6 text-castanho">@item.Nome</span>
+                            </div>
+                            <div>
+                                <span class="fw-bolder fs-6">@item.Preco</span>
+
+                            </div>
+                            <div>
+                                <span class="fw-bold text-black-50 fs-8"><i class="bi bi-geo-alt-fill"></i> @item.Localizacao</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

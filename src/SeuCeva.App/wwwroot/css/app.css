@@ -139,3 +139,10 @@ small{
     min-width: 45px;
     min-height: 45px;
 }
+
+.img-produto {
+    max-width: 80px;
+    max-height: 80px;
+    min-width: 80px;
+    min-height: 80px;
+}

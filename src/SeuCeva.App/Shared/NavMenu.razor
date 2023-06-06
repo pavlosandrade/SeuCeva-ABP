@@ -1,33 +1,4 @@
-﻿@*<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">SeuCeva.App</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <small class="navbar-toggler-icon"></small>
-        </button>
-    </div>
-</div>
-
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <small class="oi oi-home" aria-hidden="true"></small> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <small class="oi oi-plus" aria-hidden="true"></small> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <small class="oi oi-list-rich" aria-hidden="true"></small> Fetch data
-            </NavLink>
-        </div>
-    </nav>
-</div>*@
-
-<div class="container-fluid bg-castanho fixed-bottom rounded-top">
+﻿<div class="container-fluid bg-castanho fixed-bottom rounded-top">
     <div class="row align-items-center">
         <div class="col-4 py-1 text-center">
             <div>
@@ -58,12 +29,5 @@
 
 
 @code {
-    private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
 }
